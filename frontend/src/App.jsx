@@ -7,13 +7,13 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import Cart from './pages/Cart';
-import Pizza from './pages/Pizza';
+import Pizza from './pages/Pizza'; // Importa el componente Pizza
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userEmail, setUserEmail] = useState(''); // Nuevo estado para almacenar el email del usuario
+  const [userEmail, setUserEmail] = useState('');
   const [cart, setCart] = useState(() => {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
@@ -42,10 +42,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
           <Route path="/register" element={<RegisterPage />} />
-          {/* Pasa setIsLoggedIn y setUserEmail al componente LoginPage */}
           <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} setUserEmail={setUserEmail} />} />
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
-          {/* Pasa el correo del usuario al componente Profile */}
+          {/* Asegúrate de que la ruta para Pizza esté correctamente definida */}
+          <Route path="/pizza/:id" element={<Pizza />} />
           <Route path="/profile" element={<Profile userEmail={userEmail} />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<Navigate to="/404" />} />
