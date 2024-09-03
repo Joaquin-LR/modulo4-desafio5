@@ -28,7 +28,7 @@ function LoginPage({ setIsLoggedIn, setUserEmail }) {
 
     setError('');
     setIsLoggedIn(true);
-    setUserEmail(email); // Guarda el correo en el estado del componente App
+    setUserEmail(email);
     alert('¡FELICIDADES! 😁 Inicio de sesión exitoso.');
     navigate('/');
   }

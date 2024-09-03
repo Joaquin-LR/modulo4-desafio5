@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import Cart from './pages/Cart';
-import Pizza from './pages/Pizza'; // Importa el componente Pizza
+import Pizza from './pages/Pizza';
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 
@@ -44,7 +44,6 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} setUserEmail={setUserEmail} />} />
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
-          {/* Asegúrate de que la ruta para Pizza esté correctamente definida */}
           <Route path="/pizza/:id" element={<Pizza />} />
           <Route path="/profile" element={<Profile userEmail={userEmail} />} />
           <Route path="/404" element={<NotFound />} />

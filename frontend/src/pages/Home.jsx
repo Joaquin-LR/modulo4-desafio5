@@ -8,7 +8,7 @@ const Home = ({ cart, setCart }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Home - Pizzería Mamma Mia"; // Cambia el título al montar
+    document.title = "Home - Pizzería Mamma Mia";
   }, []);
 
   useEffect(() => {
