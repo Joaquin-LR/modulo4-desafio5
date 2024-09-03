@@ -16,7 +16,7 @@
 
 <h3>Notas</h3>
 <ul>
- <li><p>Sí, se me coló UN comentario que no iba, porque en un momento la página estaba en blanco sin nada en la consola. Tendré más cuidado para la próxima, aunque siempre he admitido que me ayudo de IA (puede ver anteriores ReadMe) para ahorrar tiempo a la hora de encontrar que no estoy viendo en pleno domingo en la noche y así, pero jamás para programar todo.</p></li>
+ <li><p>Sí, se me coló UN comentario que no iba, porque en un momento la página estaba en blanco sin nada en la consola. Tendré más cuidado para la próxima, aunque siempre he admitido que me ayudo de IA (puede ver anteriores ReadMe) para ahorrar tiempo a la hora de encontrar errores que no estoy viendo en pleno domingo en la noche y así, pero jamás para programar todo.</p></li>
  <li><p>Cambié un poco el estilo de la Navbar con emojis más representativos.</p></li>
   <li><p>Tenga una excelente semana, y mucha fuerza para revisar cada desafío.</p></li>
 </ul>
